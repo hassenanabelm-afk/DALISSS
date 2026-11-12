@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lugares turisticos/El Villar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+  <style>
+   .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Nabla&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Nabla&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Nabla&family=Purple+Purse&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Elsie:wght@400;900&family=Nabla&family=Pinyon+Script&family=Purple+Purse&family=Rum+Raisin&family=Waterfall&display=swap" rel="stylesheet">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+     background-color: #410449;
+    color: white;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+   box-shadow:
+        0 5px 10px rgba(0, 0, 0, 0.15),
+        0 15px 25px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+}
+.logo {
+ display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 0%;
+}
+nav {
+    display: flex;
+    gap: 5px;
+     font-family: "Rum Raisin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+nav a {
+   color: white;
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+        }
+nav a:hover {
+    background-color: #d10d0d;
+    font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+   color: #11afa7;
+    transform: translateY(-2px);
+     transform: translateY(-10px);
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.2),
+        0 20px 35px rgba(0, 0, 0, 0.2);
+}
+nav a.activo {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+       font-family: "Rum Raisin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.logo img {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+            filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.5)); 
+
+  }
+  
+</style>
+<style>
+
+/* ===== ADAPTACIÓN RESPONSIVA AÑADIDA: no altera el contenido original ===== */
+@media screen {
+  html { max-width: 100%; }
+  body { max-width: 100%; }
+  img, video, iframe { max-width: 100%; }
+  header { max-width: 100%; }
+  .contenedor, .contenedor1, .contenido, .contacto, .seccion-contacto {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 76px;
+    padding: 10px 16px !important;
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+  header .logo { min-width: 0; gap: 9px; flex-shrink: 1; }
+  header .logo img { width: 54px !important; height: 54px !important; flex-shrink: 0; }
+  header .logo > div { min-width: 0; }
+  header .logo h1, header .logo h2 {
+    line-height: 1.05 !important;
+    white-space: nowrap;
+  }
+  header .logo h1 { font-size: clamp(23px, 4vw, 30px) !important; }
+  header .logo h2 { font-size: clamp(23px, 4vw, 30px) !important; margin-top: 2px !important; }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px 18px;
+    margin: 0;
+    background: #410449;
+    box-shadow: 0 12px 24px rgba(0,0,0,.25);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    z-index: 1005;
+  }
+  header nav.menu-abierto { display: flex !important; }
+  header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    padding: 13px 15px !important;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+  header nav a:hover { transform: none !important; }
+  .menu-toggle {
+    display: flex;
+    flex: 0 0 44px;
+    width: 44px; height: 42px;
+    margin-left: auto;
+    padding: 8px;
+    border: 1px solid rgba(255,255,255,.55);
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .menu-toggle .menu-linea { display:block; width:22px; height:2px; border-radius:2px; background:#fff; transition:transform .2s,opacity .2s; }
+  .menu-toggle[aria-expanded="true"] .menu-linea:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] .menu-linea:nth-child(2) { opacity:0; }
+  .menu-toggle[aria-expanded="true"] .menu-linea:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+  .contenedor {
+    width: calc(100% - 28px) !important;
+    max-width: 1100px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: clamp(16px, 3vw, 25px) !important;
+    padding-right: clamp(16px, 3vw, 25px) !important;
+  }
+  .collage {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin-left: 0 !important;
+    height: auto !important;
+    grid-template-rows: clamp(105px, 22vw, 180px) clamp(105px, 22vw, 180px) !important;
+  }
+  selection {
+    width: 100% !important;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    margin-left: 0 !important;
+    padding: 10px !important;
+    gap: 18px !important;
+  }
+  selection > div, selection div, div1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .tarjetas-cultura { grid-template-columns: repeat(2, minmax(0,1fr)) !important; padding: 0 16px; }
+  .contenido-ventana { width: min(750px, 100%) !important; box-sizing: border-box; }
+  .contenido-ventana img { max-width: 100%; }
+  .banner { box-sizing: border-box; max-width: 100%; }
+}
+@media (max-width: 600px) {
+  header { min-height: 68px; padding: 8px 12px !important; }
+  header .logo img { width: 45px !important; height: 45px !important; }
+  header .logo h1 { font-size: 23px !important; }
+  header .logo h2 { font-size: 24px !important; }
+  .contenedor {
+    width: calc(100% - 18px) !important;
+    padding: 18px 14px 28px !important;
+    border-radius: 12px;
+  }
+  .collage {
+    gap: 7px !important;
+    padding: 9px !important;
+    border-width: 3px !important;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) !important;
+    grid-template-rows: clamp(90px, 27vw, 135px) clamp(90px, 27vw, 135px) !important;
+    margin-bottom: 25px !important;
+  }
+  .collage img { min-width: 0; border-radius: 8px !important; }
+  selection { grid-template-columns: minmax(0, 1fr) !important; gap: 14px !important; }
+  selection > div, selection div, div1 { width: 100% !important; }
+  .tarjetas-cultura { grid-template-columns: minmax(0,1fr) !important; max-width: 430px; margin-left:auto; margin-right:auto; }
+  .encabezado-cultura h2 { font-size: clamp(30px, 9vw, 40px) !important; }
+  .encabezado-cultura .subtitulo { font-size: clamp(27px, 8vw, 36px) !important; }
+  .descripcion-cultura { width: 90%; font-size: 17px !important; }
+  .contenido-tarjeta { padding: 18px !important; }
+  .ventana { padding: 10px !important; }
+  .contenido-ventana { padding: 25px 15px !important; max-height: 92vh !important; }
+  .contenido-ventana h2 { font-size: clamp(23px, 7vw, 30px) !important; padding-right: 18px; }
+  selection div1 { padding: 12px !important; }
+  .contenido-ventana img, div1 img { width: 100% !important; height: auto !important; max-height: 240px; object-fit: cover; }
+  h4 { overflow-wrap: anywhere; }
+  h5 { font-size: clamp(25px, 7vw, 36px) !important; line-height: 1.2; overflow-wrap: anywhere; }
+  p { overflow-wrap: break-word; }
+  .banner { min-height: 320px; height: auto !important; padding: 45px 16px !important; }
+  .banner h1 { font-size: clamp(29px, 8vw, 40px) !important; line-height: 1.15; }
+  .banner h5 { font-size: clamp(21px, 6vw, 28px) !important; text-align: center; }
+  .contenedor1 { padding: 16px !important; }
+  .contacto, .formulario, .tarjeta-contacto, .contenido-contacto {
+    width: 100% !important; max-width: 100% !important; box-sizing: border-box;
+  }
+}
+@media (max-width: 360px) {
+  header .logo img { width: 40px !important; height: 40px !important; }
+  header .logo h1 { font-size: 20px !important; }
+  header .logo h2 { font-size: 21px !important; }
+  .contenedor { padding-left: 11px !important; padding-right: 11px !important; }
+  .collage { grid-template-rows: 88px 88px !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu-toggle .menu-linea { transition: none !important; }
+}
+
+</style>
+</head>
+<body>
+    <header>
+
+      
+       <div class="logo">
+         <img src="img/GAM-removebg-preview.png" alt="El Villar"> 
+         <div>
+            <h1>Descubre</h1>
+             
+            <h2> El Villar</h2>
+         </div>
+         <style> 
+         
+               .logo h1{
+                 font-family: "Waterfall", cursive;
+                 font-weight: 500;
+                 font-style: normal;
+                 color: rgb(241, 158, 172);
+                 text-shadow: 2px 3px 4px rgb(245, 252, 249);
+                 font-size: 40px;
+                 justify-content: left;
+                }
+               .logo h2{
+                 font-family: "Elsie", serif;
+                 font-weight: 900;
+                 font-style: normal;
+                 color: azure;
+                 font-size: 40px;
+                 margin-top: 40px;
+                }
+         </style>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-controls="menu-principal" aria-expanded="false">
+          <span class="menu-linea"></span><span class="menu-linea"></span><span class="menu-linea"></span>
+        </button>
+        <nav id="menu-principal" aria-label="Navegación principal">
+        <a href="#" class="activo"><span class="material-symbols-outlined">home</span>Inicio</a>
+        <a href="destinos.html">🏞️ Atractivos</a>
+        
+        <a href="cultura.html">🎭 Cultura</a>
+        <a href="contacto.html">📞 Contacto</a>
+        </nav>
+    </header>
+    
+    </div>
+    
+ <section class="banner"> 
+  <div>
+     <h1>Bienvenidos a El Villar</h1>
+     <div class="decoracion">
+    <span></span>
+    <b>❧</b>
+    <span></span>
+</div>
+     <h5>Conoce las maravillas que te ofrece este lugar</h5>
+   
+     <style>
+    .banner{
+       height: 500px;
+        background-size: cover;
+        background-image:url(img/banner.jpeg) ;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    }
+    h1{
+       font-family: "Purple Purse", serif;
+       font-weight: 400;
+       font-style: normal;
+       color:  white;
+       font-size: 50px;
+       position: relative;
+      display: flex;
+       justify-content: center;
+      align-items: center;
+     text-align: center;
+       text-shadow: 6px 8px 16px black;
+       margin-bottom: 0;
+     
+        }
+    .decoracion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    gap: 15px;
+
+}
+
+.decoracion span {
+    width: 100px;
+    height: 2px;
+    background-color: gold;
+}
+
+.decoracion b {
+    color: gold;
+    font-size: 25px;
+}
+    h5{
+        font-family: "Pinyon Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        color: rgb(255, 255, 255); 
+        position: relative;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-top: 0;
+        text-shadow:
+        0 0  5px black,
+        0 0 20px black,
+        0 0 40px black;
+     }
+     </style>
+
+</div>
+    
+ </section>   
+ <div class="contenedor">
+ <h4>HISTORIA</h4>
+  <P>
+     El actual municipio de El Villar, ubicado en la provincia Tomina del departamento de Chuquisaca, 
+     estuvo habitado inicialmente por un conjunto de residentes nativos organizados en un rancherío. Sobre 
+     este asentamiento se fundó el pueblo denominado Reyes del Villar en 1583, por el adelantado español 
+     don Pedro de Segura, siguiendo una ordenanza del virrey Francisco de Toledo. El municipio fue creado 
+     mediante la Ley N.º 204 del 26 de noviembre de 1962, constituyéndose en la Quinta Sección de la provincia 
+     Tomina. Según el censo de 2012, contaba con 4.465 habitantes, quienes se identifican principalmente con 
+     la cultura quechua, aunque el castellano es el idioma materno predominante.
+    <br><br>
+     La historia de El Villar también está relacionada con las luchas por la independencia de Bolivia, 
+     especialmente con la figura de Manuel Ascencio Padilla. Nacido en 1774 en la hacienda de Chipirina, 
+     se casó con Juana Azurduy Llanos en 1799, con quien tuvo cinco hijos. En septiembre de 1810, se 
+     incorporó al movimiento revolucionario que buscaba la libertad y la independencia. Posteriormente, 
+     fue nombrado Comandante Civil y Militar de la zona comprendida entre Chuquisaca, Cochabamba y Santa Cruz,
+     desde donde organizó la resistencia independentista junto a guerrillas indígenas.
+    <br><br>
+     Padilla obtuvo importantes victorias en diferentes lugares, entre ellos Mojotoro, Yamparáez, Tarabuco, 
+     Tomina y La Laguna. Junto a su esposa Juana Azurduy, participó en numerosas batallas que debilitaron a las 
+     fuerzas realistas. En 1813, reunió un importante contingente indígena conocido como la “Republiqueta de La 
+     Laguna”, con el que continuó su lucha por la independencia.
+    <br><br>
+     El 14 de septiembre de 1816, después de resistir en la Batalla de La Laguna, Padilla se retiró hacia 
+     El Villar. En el Abra de Yotala fue sorprendido y atacado por las fuerzas realistas dirigidas por Francisco 
+     Xavier Aguilera, donde perdió la vida. Su cabeza fue cercenada y llevada como trofeo de guerra. Según las 
+     crónicas, su cuerpo fue enterrado inicialmente en el cementerio de El Villar y posteriormente trasladado. 
+     Finalmente, el 11 de julio de 2006, sus restos fueron reunidos con los de su esposa Juana Azurduy de Padilla  
+     y trasladados a la Casa de la Libertad, en la ciudad de Sucre.
+  </P>
+  <h4>UBICACIÓN GEOGRÁFICA</h4>
+   <p>El Villar, Capital del municipio se encuentra ubicado en las coordenadas geográficas 64º 18’ 37.6” de longitud 
+    oeste y en el paralelo 19º 37’ 45” de latitud sud. El municipio de El Villar Se encuentra entre los meridianos 
+    64°25'44.21" y 64° 8'36.63" de longitud oeste y entre los paralelos  19°30'22.24" y  19°52'28.11" de latitud sud.
+    <br><br>
+    El centro poblado de El Villar se encuentra a una altura de 2.120 m.s.n.m., y se encuentra a 212 kilómetros de
+    la ciudad de Sucre, en el camino troncal Sucre – Tarabuco - Zudáñez - Tomina – Cruce Qhonchu Pata; de donde se 
+    desvía a la derecha por camino secundario hacia Alcalá y El centro poblado de El Villar.
+</p>
+ <a href="https://maps.app.goo.gl/kHygB7g3saWMtbTm7"><button>Pulsa aquí</button></a>
+
+ <h4>LÍMITES CON OTROS TERRITORIOS</h4>
+ <p>Los límites territoriales de la Sección Municipal establecidos en la ley de creación son:
+<br><br>
+🏞️ Al Norte con los municipios de Padilla y Alcalá de la Provincia Tomina.
+<br>
+🏞️ Al Sud con los Municipios de Azurduy de la Provincia Azurduy y Monteagudo de la Provincia Hernando Siles.
+<br>
+🏞️ Al Este con los Municipios de Padilla de la Provincia Tomina y Monteagudo de la Provincia Hernando Siles.
+<br>
+🏞️ Al Oeste con los Municipios de Sopachuy de la Provincia Tomina, Tarvita y Azurduy de la Provincia Azurduy.
+</p>
+
+<h4>FISIOGRAFÍA</h4>
+<p>Su fisiografía del municipio de El Villar nos muestra serranías altas con disección fuerte en 
+    un porcentaje mayor del territorio y con disección moderada en menor escala y llanuras de pie de 
+    monte con disección ligera en porcentajes menores y serranías medias con disección fuerte.
+<br>
+Los datos altitudinales varían desde los 1.350 m.s.n.m. hasta los 2.500 m.s.n.m. Se verifica la existencia 
+de cumbres que llegan cerca de los 3.000 m.s.n.m. El centro poblado de El Villar se encuentra a una altitud 
+de 2.120 m.s.n.m. con un promedio de altura de 2694 m. s.n.m.
+<br><br>
+El municipio de El Villar está ubicado en una zona que comprende los sectores de la cordillera oriental y el subandino.
+<br><br>
+La Cordillera Oriental presenta características propias de relieve como montañas, serranías, cuestas, colinas, piedemontes, 
+terrazas aluviales, llanuras aluviales y otras.  Las montañas y serranías presentan una orientación dominante noreste – sudeste, 
+así como también los valles con llanuras aluviales de amplitud y geometría variable (ZONISIG, 2000).
+<br>
+Lo subandino presenta con conjunto de paisajes como serranías, colinas, piedemontes y terrazas aluviales a 
+una altitud menor comparativamente con la Cordillera Oriental.
+<br><br>
+
+En el territorio municipal se distinguen hasta tres pisos ecológicos:
+<br><br>
+🌿 La zona alta, que comprende desde los 2.200 a 2.500 m.s.n.m. corresponde a pendientes superiores y climas de serranías. Estacionalmente presenta densa neblina, bosque ralo a denso mayormente siempre verde estacional o de transición montano. Constituye un microclima especial y es relicto de los antiguos bosques degradados por el uso intensivo.  
+<br>	
+🌿 La zona media o cabecera de valle ubicada entre los 1.800 a 2.200 m.s.n.m. se caracteriza por constituirse en una zona transicional entre el valle y la altura, matorral ralo mayormente espinoso con algunos árboles. Pequeñas parcelas con cultivos a secano para el autoconsumo.
+<br>
+🌿 La zona de los valles se ubica por debajo de los 1.800 m.s.n.m., son terrazas aluviales y áreas antrópicas. Parcelas de cultivo bajo riego y a secano; terrazas de tamaño pequeño en pie de monte, con cultivos de maíz, ají, maní y hortalizas. Presenta una vegetación con bosquetes ralos con especies de árboles de: Molle (Schinus sp.), algarrobo (Prosopis sp.), sirado (Acacia sp.).  El uso actual es predominantemente agrícola.
+</p>
+
+<h4>CLIMA</h4>
+<p>
+Temperatura máxima y mínima
+<br><br>
+La temperatura máxima media anual es de 27.2 °C, la temperatura media anual es de 17.4 °C y la temperatura mínima media anual es de 9.8 °C.  Asimismo, la temperatura máxima absoluta alcanzó su máximo valor en el año 2013 siendo de 41,5 °C en el mes de diciembre y la temperatura mínima absoluta alcanzó a – 3.5 °C en el mes de agosto del año 2013.
+<br><br>
+Precipitaciones pluviales 
+<br><br>
+La precipitación total es variable por año, en el año 2007 fue de 676.4 mm./año y el año 2013 fue de 497 mm./año.
+<br>
+El período de mayor precipitación pluvial está comprendido desde el mes de diciembre hasta el mes de abril.  Octubre, también se constituye en un mes de importancia pluvial.
+<br><br>
+Vientos, heladas, sequia
+<br><br>
+La velocidad del viento máxima es de 16 kilómetros por hora en dirección este (E) en las cabeceras de valles y zonas abiertas como las de El Villar.  La fisiografía condiciona los efectos del viento, presentándose en los valles con menor frecuencia y velocidad a la citada.
+<br><br>
+Clasificación climática
+<br><br>
+Según la clasificación climatológica de Thornthwaite es posible distinguir tres tipos de clima:
+<br><br>
+🍃 Clima sub húmedo seco (índice hídrico entre -20 a 0).  El balance hídrico de este tipo de clima indica de 1 a 2 meses excedencia hídrica y entre 6 a 7 meses déficit hídrico.  Lo anterior identifica un ambiente de relativa sequedad con lluvias estivales y un invierno moderadamente seco.
+<br>
+🍃 Clima sub húmedo (índice hídrico entre 0 a 20).  El balance hídrico es de 2 y 4 meses de excedencia y de 3 a 5 meses de déficit hídrico.  El ambiente de sequedad es mayor que en los climas húmedos, presentándose sectores de humedad mayor en el fondo de los valles.
+<br>
+🍃 Clima húmedo (índice hídrico entre 60 a 80).  El balance hídrico determina excedencia de hasta 4 y 5 meses y períodos de déficit hídrico menores y subordinados. 
+<br><br>
+Se destacan cuatro fenómenos climatológicos:
+<br><br>
+🌦️ Heladas: Concentrada en los meses de mayo, junio, julio y agosto, por tanto, no necesariamente afecta a la producción agrícola, aunque alguna vez se dieron en octubre.
+<br>
+🌦️ Granizadas: Su comportamiento es variado, con mayor intensidad en los meses de octubre, noviembre, diciembre y enero, afectando considerablemente a la producción agrícola.
+<br>
+🌦️ Nevadas: En los meses de julio de 2013 y 2014 se registraron 2 y 1 nevadas respectivamente.
+<br>
+🌦️ Sequía: Es un fenómeno que se presenta con regularidad en al menos el 67% de las comunidades en los meses de noviembre y diciembre, afectando significativamente en la producción agrícola.
+<br>
+🌦️ Riadas: Al menos el 40% de las comunidades afirma que sufren de este fenómeno entre los meses de noviembre y febrero.
+
+</p>
+
+<style>
+    .contenedor{
+      background-color: gainsboro;
+      margin: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 100px;
+      padding-right: 100px;
+      border-radius: 30px;
+      justify-content: center;
+    }
+    P {
+      font-size: 25px;
+      color: black;
+      font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal; 
+      justify-content: center;
+      list-style: 1,5;
+    }
+    h4{
+         font-family: "Cinzel", serif;
+         font-optical-sizing: auto;
+         font-weight: 600;
+         font-size: 45px;
+         text-align: center;
+        
+    }
+    button{
+    background: #0277bd;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+   button:hover{
+    background: #9e186b;
+    transform: scale(1.08);
+   
+}
+</style>
+ </div>
+  
+
+
+
+<!-- MEJORA VISUAL: fondo panorámico fijo y muy suave detrás del contenido -->
+<style>
+  html { scroll-behavior: smooth; }
+
+  body {
+    position: relative;
+    isolation: isolate;
+    background: #f7f5f7;
+  }
+
+  /* La fotografía permanece fija mientras el contenido se desplaza. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(255,255,255,.70), rgba(255,255,255,.70)),
+      url("img/banner.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* El contenido ya no tiene un bloque gris: deja ver el paisaje suavemente. */
+  .contenedor {
+    width: min(100%, 1120px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: clamp(30px, 5vw, 64px) clamp(20px, 7vw, 90px);
+    background: transparent !important;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .contenedor h4 {
+    color: #35113b;
+    font-size: clamp(30px, 3.2vw, 43px);
+    line-height: 1.2;
+    margin: 34px 0 28px;
+    text-shadow: 0 1px 8px rgba(255,255,255,.85);
+    letter-spacing: 1px;
+  }
+
+  .contenedor h4::after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 3px;
+    margin: 14px auto 0;
+    border-radius: 5px;
+    background: #8d4b91;
+    opacity: .8;
+  }
+
+  .contenedor p {
+    color: #17131a;
+    font-size: clamp(17px, 1.55vw, 21px);
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 auto 38px;
+    text-shadow: 0 1px 5px rgba(255,255,255,.9);
+  }
+
+  .contenedor a { display: table; margin: 8px auto 42px; }
+
+  .contenedor button {
+    box-shadow: 0 8px 22px rgba(45, 10, 50, .18);
+  }
+
+  .contenedor button:hover {
+    box-shadow: 0 12px 26px rgba(45, 10, 50, .25);
+  }
+
+  @media (max-width: 700px) {
+    body::before {
+      background-image:
+        linear-gradient(rgba(255,255,255,.87), rgba(255,255,255,.87)),
+        url("img/banner.jpeg");
+      background-position: center;
+    }
+    .contenedor {
+      padding: 28px 20px 42px;
+    }
+    .contenedor p {
+      text-align: left;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .contenedor h4 { margin-top: 28px; }
+  }
+
+  /* Aparición elástica y delicada al entrar cada sección en pantalla. */
+  @media (prefers-reduced-motion: no-preference) {
+    .contenedor .aparece-scroll {
+      opacity: 0;
+      transform: translate3d(0, 28px, 0);
+      transition:
+        opacity .65s ease-out,
+        transform .85s cubic-bezier(.22, 1.32, .36, 1);
+      will-change: transform, opacity;
+    }
+    .contenedor .aparece-scroll.visible {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      will-change: auto;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .contenedor .aparece-scroll { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+
+
+<script>
+  // El contenido aparece con un pequeño rebote solo al llegar a la pantalla.
+  // La página sigue funcionando sin JavaScript o con movimiento reducido.
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!('IntersectionObserver' in window) ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const elementos = document.querySelectorAll('.contenedor h4, .contenedor p, .contenedor a');
+    const observador = new IntersectionObserver((entradas, obs) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visible');
+          obs.unobserve(entrada.target); // solo una vez, sin parpadeos
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px 30px 0px' });
+
+    elementos.forEach(elemento => {
+      // No ocultar la información visible al abrir el archivo.
+      if (elemento.getBoundingClientRect().top < window.innerHeight) return;
+      elemento.classList.add('aparece-scroll');
+      observador.observe(elemento);
+    });
+  });
+</script>
+
+<!-- RESPONSIVIDAD COMPLETA: ajustes conservando estética y animaciones originales -->
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { max-width: 100%; }
+  body { min-width: 0; width: 100%; overflow-x: clip; }
+  img { max-width: 100%; }
+  header { width: 100%; min-height: 96px; padding: 12px clamp(14px, 2.5vw, 32px); gap: 18px; }
+  header .logo { min-width: 0; gap: 12px; flex-shrink: 0; }
+  header .logo img { width: clamp(52px, 5.5vw, 75px); height: clamp(52px, 5.5vw, 75px); flex-shrink: 0; }
+  header .logo > div { min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 0; }
+  header .logo h1, header .logo h2 { position: static; display: block; text-align: left; margin: 0; line-height: 1; }
+  header .logo h1 { font-size: clamp(25px, 3vw, 40px); }
+  header .logo h2 { font-size: clamp(26px, 3vw, 40px); margin-top: 3px; white-space: nowrap; }
+  header nav { align-items: center; justify-content: flex-end; gap: clamp(2px, .5vw, 8px); min-width: 0; }
+  header nav a { display: inline-flex; align-items: center; justify-content: center; gap: 3px; white-space: nowrap; padding: 11px clamp(7px, 1vw, 15px); font-size: clamp(13px, 1.15vw, 17px); }
+  header nav .material-symbols-outlined { font-size: 22px; }
+  .menu-toggle { display: none; background: transparent; border: 1px solid rgba(255,255,255,.4); padding: 10px; border-radius: 12px; width: 46px; height: 44px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; box-shadow: none; flex-shrink: 0; }
+  .menu-toggle .menu-linea { display: block; width: 22px; height: 2px; border-radius: 2px; background: #fff; transition: transform .22s, opacity .22s; }
+  .menu-toggle[aria-expanded="true"] .menu-linea:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] .menu-linea:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] .menu-linea:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .menu-toggle:hover { background: rgba(255,255,255,.12); transform: none; box-shadow: none; }
+  .menu-toggle:focus-visible, header nav a:focus-visible { outline: 3px solid #f3c978; outline-offset: 3px; }
+  .banner { min-height: clamp(340px, 55vw, 640px); height: auto; padding: clamp(55px, 9vw, 90px) clamp(18px, 6vw, 70px); }
+  .banner > div { width: 100%; max-width: 1000px; }
+  .banner h1 { font-size: clamp(32px, 5vw, 58px); line-height: 1.15; }
+  .banner h5 { font-size: clamp(23px, 3.3vw, 35px); line-height: 1.4; justify-content: center; text-align: center; }
+  .decoracion span { width: clamp(38px, 9vw, 100px); }
+  .contenedor { max-width: 1120px; width: 100%; }
+  .contenedor p { overflow-wrap: break-word; hyphens: auto; }
+  .contenedor h4 { overflow-wrap: break-word; }
+  @media (max-width: 900px) {
+    header { min-height: 82px; padding: 12px 18px; }
+    header .logo img { width: 58px; height: 58px; }
+    header .logo h1 { font-size: 28px; }
+    header .logo h2 { font-size: 30px; }
+    .menu-toggle { display: flex; margin-left: auto; }
+    header nav { display: none; position: absolute; top: 100%; left: 0; right: 0; width: 100%; background: #410449; padding: 12px 18px 20px; box-shadow: 0 14px 24px rgba(0,0,0,.25); flex-direction: column; align-items: stretch; gap: 5px; z-index: 1002; }
+    header nav.menu-abierto { display: flex; }
+    header nav a { justify-content: flex-start; width: 100%; padding: 14px 16px; font-size: 17px; border-radius: 12px; }
+    header nav a:hover { transform: none; }
+    .contenedor { padding: 36px clamp(22px, 5vw, 54px) 56px; }
+    .contenedor p { font-size: clamp(17px, 2.1vw, 20px); }
+  }
+  @media (max-width: 600px) {
+    header { min-height: 76px; padding: 10px 14px; gap: 10px; }
+    header .logo { gap: 9px; }
+    header .logo img { width: 48px; height: 48px; }
+    header .logo h1 { font-size: 25px; }
+    header .logo h2 { font-size: 26px; margin-top: 2px; }
+    .banner { min-height: 55svh; min-height: max(300px, 55svh); padding: 48px 18px; }
+    .banner h1 { font-size: clamp(29px, 8vw, 40px); }
+    .banner h5 { font-size: clamp(22px, 6vw, 29px); }
+    .contenedor { padding: 28px 19px 46px; }
+    .contenedor h4 { font-size: clamp(26px, 7vw, 34px); margin: 32px 0 24px; line-height: 1.2; }
+    .contenedor p { font-size: 17px; line-height: 1.75; text-align: left; margin-bottom: 31px; }
+    .contenedor a { max-width: 100%; }
+    .contenedor button { max-width: 100%; min-height: 44px; }
+    /* Se conserva el mismo velo blanco del 70 % también en celular. */
+    body::before { background-image: linear-gradient(rgba(255,255,255,.70), rgba(255,255,255,.70)), url("img/banner.jpeg"); }
+  }
+  @media (max-width: 360px) {
+    header .logo img { width: 42px; height: 42px; }
+    header .logo h1 { font-size: 22px; }
+    header .logo h2 { font-size: 23px; }
+    .contenedor { padding-inline: 15px; }
+    .contenedor p { font-size: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .menu-toggle .menu-linea { transition: none; }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const boton = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu-principal');
+    if (!boton || !menu) return;
+    function cerrar() {
+      menu.classList.remove('menu-abierto');
+      boton.setAttribute('aria-expanded', 'false');
+      boton.setAttribute('aria-label', 'Abrir menú de navegación');
+    }
+    boton.addEventListener('click', function () {
+      const abrir = boton.getAttribute('aria-expanded') !== 'true';
+      menu.classList.toggle('menu-abierto', abrir);
+      boton.setAttribute('aria-expanded', String(abrir));
+      boton.setAttribute('aria-label', abrir ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
+    });
+    menu.querySelectorAll('a').forEach(enlace => enlace.addEventListener('click', cerrar));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrar(); });
+    document.addEventListener('click', e => { if (!e.target.closest('header')) cerrar(); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 900) cerrar(); });
+  });
+</script>
+</body>
+</html>
